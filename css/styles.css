@@ -125,6 +125,8 @@ address {
   border-radius: 4px;
   color: var(--base-light-100);
   background: var(--accent-100);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
@@ -139,7 +141,6 @@ address {
   background: var(--base-light-300);
   border: 1px solid var(--base-light-400);
   border-radius: 4px;
-  cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -368,6 +369,14 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--accent-200);
+  border-color: var(--accent-200);
+}
+.customers-icon {
+  fill: currentColor;
+}
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
@@ -533,6 +542,12 @@ address {
   fill: var(--base-main-100);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--accent-200);
+  fill: var(--base-light-100);
+  border: none;
 }
 .modal-close-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
